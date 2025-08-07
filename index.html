@@ -1,7 +1,240 @@
-<h1>Andrew Kanarek</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your GitHub Pages Site</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: #333;
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+        
+        nav ul li {
+            margin: 0 20px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        nav ul li a:hover {
+            color: #ddd;
+        }
+        
+        main {
+            margin-top: 80px;
+            padding: 2rem 0;
+        }
+        
+        .hero {
+            background: white;
+            padding: 4rem 0;
+            text-align: center;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .content-section {
+            background: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .content-section h2 {
+            color: #333;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #333;
+            padding-bottom: 0.5rem;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .card h3 {
+            color: #333;
+            margin-bottom: 1rem;
+        }
+        
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: #333;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 1rem;
+            transition: background 0.3s ease;
+        }
+        
+        .btn:hover {
+            background: #555;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav ul li {
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<p><a href="https://scholar.google.com/citations?user=c96X2E8AAAAJ&hl=en">Google Scholar</a></p>
-<p><a href="https://github.com/akanarek">Github</a></p>
-<a href="mailto:andrew.kanarek@gmail.com">Email</a>
+    <main>
+        <div class="container">
+            <section id="home" class="hero">
+                <h1>Welcome to My GitHub Pages Site</h1>
+                <p>This is a sample website hosted on GitHub Pages. Customize this content to showcase your projects, portfolio, or personal information.</p>
+                <a href="#projects" class="btn">View My Work</a>
+            </section>
 
-<p><img src="https://raw.githubusercontent.com/akanarek/webimages/main/IMG_0659.JPG" style="width:42px;height:42px;"></a></p>
+            <section id="about" class="content-section">
+                <h2>About</h2>
+                <p>Add your personal or professional information here. This section can include your background, skills, interests, or any other relevant details you'd like to share with visitors.</p>
+            </section>
+
+            <section id="projects" class="content-section">
+                <h2>Projects</h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3>Project One</h3>
+                        <p>Description of your first project. Include details about technologies used, challenges overcome, and outcomes achieved.</p>
+                        <a href="#" class="btn">Learn More</a>
+                    </div>
+                    <div class="card">
+                        <h3>Project Two</h3>
+                        <p>Description of your second project. Highlight key features and your role in the development process.</p>
+                        <a href="#" class="btn">Learn More</a>
+                    </div>
+                    <div class="card">
+                        <h3>Project Three</h3>
+                        <p>Description of your third project. Showcase the impact and results of your work.</p>
+                        <a href="#" class="btn">Learn More</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="content-section">
+                <h2>Contact</h2>
+                <p>Get in touch with me through the following channels:</p>
+                <ul>
+                    <li>Email: your.email@example.com</li>
+                    <li>LinkedIn: <a href="https://linkedin.com/in/yourprofile">linkedin.com/in/yourprofile</a></li>
+                    <li>GitHub: <a href="https://github.com/yourusername">github.com/yourusername</a></li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Your Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
