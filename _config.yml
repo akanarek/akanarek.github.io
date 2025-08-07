@@ -1,0 +1,6 @@
+title: Andrew Kanarek
+description: Home Page
+email: andrew.kanarek@gmail.com
+sass:
+    style: compressed
+    sass_dir: _sass
